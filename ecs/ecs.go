@@ -12,7 +12,7 @@ import (
 func CheckSslPath(domain string) bool {
 	iprecords,_ := net.LookupIP(domain)
 	ipAddressToBoost := fmt.Sprintf("%d.%d.%d.%d",iprecords[0][12],iprecords[0][13],iprecords[0][14],iprecords[0][15])
-	ecsip := "120.78.177.83"
+	ecsip := "ip"
 	if ecsip == ipAddressToBoost {
 		return true
 	} else {
